@@ -10,35 +10,57 @@
             margin: 0;
             padding: 0;
             text-align: center;
+            background-color: #f4f4f4;
         }
-        .section {
-            padding: 50px;
-            border-bottom: 1px solid #ddd;
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .box {
+            background-color: white;
+            padding: 20px;
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
         }
         img {
             max-width: 100%;
             height: auto;
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
 
-    <div class="section" id="sobre">
-        <h2>Sobre Mim</h2>
-        <p>Escreva aqui um texto sobre você.</p>
-        <img src="sobre.jpg" alt="Imagem sobre você">
-    </div>
+    <header>Bem-vindo!</header>
 
-    <div class="section" id="projetos">
-        <h2>Projetos</h2>
-        <p>Fale sobre seus projetos.</p>
-        <img src="projetos.jpg" alt="Imagem de seus projetos">
-    </div>
+    <div class="container">
+        <div class="box" id="sobre">
+            <h2>Sobre Mim</h2>
+            <p>Escreva aqui um texto sobre você.</p>
+            <img src="sobre.jpg" alt="Imagem sobre você">
+        </div>
 
-    <div class="section" id="novidades">
-        <h2>Novidades</h2>
-        <p>Compartilhe suas novidades.</p>
-        <img src="novidades.jpg" alt="Imagem relacionada às novidades">
+        <div class="box" id="projetos">
+            <h2>Projetos</h2>
+            <p>Fale sobre seus projetos.</p>
+            <img src="projetos.jpg" alt="Imagem de seus projetos">
+        </div>
+
+        <div class="box" id="novidades">
+            <h2>Novidades</h2>
+            <p>Compartilhe suas novidades.</p>
+            <img src="novidades.jpg" alt="Imagem relacionada às novidades">
+        </div>
     </div>
 
 </body>
